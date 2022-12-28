@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------------HEADER----------------*/
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.295);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: bold;
+}
+header a img {
+  align-items: start;
+  display: flex;
+  height: 100%;
+  width: 180%;
+}
+header nav {
+  padding: 0px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+}
+header nav ul li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 1.5rem;
+  font-style: bold;
+  text-align: center;
+  padding: 15px;
+  transition: 3s ease;
+}
+
+header nav ul li:hover {
+  transform: translateY(-15px);
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgba(209, 226, 60, 0.514);
+}
+
+header nav ul li a:hover {
+  background-color: rgba(126, 68, 180, 0.795);
+}
+
+/*-----------------MAIN INDEX--------------*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 200;
+  font-style: italic;
+  width: 100%;
+  height: 80%;
+}
+.hero .quienesSomos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/servicios.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+  border: 4px solid black;
+}
+.hero .quienesSomos .historia .nosotros {
+  font-size: 3rem;
+  font-style: bold italic;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+}
+.hero .quienesSomos .historia h3 {
+  font-style: bold italic;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+}
+.hero .quienesSomos .historia p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: black;
+  font-size: 1.2rem;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+}
+
+.hero .quienesSomos .historia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: black;
+  font-size: 2.5rem;
+  margin: 5px;
+}
+.hero .quienesSomos .historia h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: black;
+  margin: 5px;
+}
+.hero .quienesSomos .vision h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  color: black;
+  margin: 5px;
+}
+.hero .quienesSomos .mision h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  color: black;
+  margin: 5px;
+}
+.hero .quienesSomos .mision p {
+  font-size: 1.2rem;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+  margin-bottom: 10px;
+}
+.hero .quienesSomos .vision p {
+  font-size: 1.2rem;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+}
+.nuestrosServicios .servicios {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50vh;
+  border: 4px solid black;
+  background-image: url("../img/servicios1.jpg");
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 3s ease-out;
+}
+
+.nuestrosServicios .servicios a:hover {
+  transform: scale(1.5);
+}
+
+.nuestrosServicios .servicios a {
+  text-decoration: none;
+  color: black;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+.galeria {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50vh;
+  border: 4px solid black;
+  text-align: center;
+  background-image: url(../img/galeria2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 3s ease-out;
+}
+.galeria a {
+  text-decoration: none;
+  color: black;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.galeria a:hover {
+  transform: scale(1.5);
+}
+.calzadoIndustria {
+  border: 4px solid black;
+  background-color: rgba(209, 226, 60, 0.514);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.tituloIndustria h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center;
+  margin: 15px;
+}
+.calzadoIndustria .videosIndustria {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+/*------------------- MAIN SERVICIOS----------------------*/
+.encabezadoServicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.tituloServicio {
+  font-style: bold italic;
+  font-size: 3rem;
+}
+
+.contenedorGrid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  transition: 5s;
+}
+
+.itemGrid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 13px 15px 12px 0px rgba(201, 204, 73, 0.75);
+  -webkit-box-shadow: 13px 15px 12px 0px rgba(201, 204, 73, 0.75);
+  -moz-box-shadow: 13px 15px 12px 0px rgba(201, 204, 73, 0.75);
+  border: 3px solid rgb(210, 226, 60);
+  background-color: rgba(209, 226, 60, 0.514);
+}
+.itemGrid:hover {
+  transform: scale(1.15);
+  background-color: rgba(126, 68, 180, 0.795);
+}
+
+.itemGrid img {
+  width: 25%;
+  padding: 10px;
+}
+.itemGrid p {
+  padding: 15px;
+  font-size: 1.2rem;
+}
+.itemGrid .cuenta .botonCuenta a {
+  text-decoration: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+/*------------------- MAIN GALERIA----------------------*/
+.marcas {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(209, 226, 60, 0.514);
+}
+
+.marcas .infoMarcas {
+  margin: 10px;
+}
+
+.marcas .subInfo {
+  margin: 20px;
+}
+
+.marcas .subInfo div {
+  margin-top: 20px;
+}
+
+.marcas .subInfo div a {
+  background-color: rgba(209, 226, 60);
+  border: 3px solid rgba(209, 226, 60);
+  padding: 5px;
+}
+
+/*------------------- MAIN REDES----------------------*/
+
+.redes {
+  background-color: rgba(209, 226, 60, 0.514);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subtituloRedes {
+  margin: 15px;
+  border: 4px solid rgb(210, 226, 60);
+  background-color: rgba(209, 226, 60, 0.514);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  animation-name: slidetitulo;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-iteration-count: initial;
+}
+.linkRedes a img {
+  height: 200px;
+  margin: 10px;
+}
+
+.linkRedes a img:hover {
+  transform: scale(1.2);
+}
+
+.seccionUbicacion {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.seccionUbicacion div iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/*--------KEYFRAME TITULO REDES-------------*/
+@keyframes slidetitulo {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*------------------- MAIN CONTACTO----------------------*/
+
+.formContacto {
+  background-color: rgba(209, 226, 60, 0.514);
+}
+
+/*------------------- MAIN CLIENTES----------------------*/
+
+.ingresoClientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: rgba(209, 226, 60, 0.514);
+}
+.crearCuenta h2 {
+  margin: 15px;
+  border: 4px solid rgb(210, 226, 60);
+  background-color: rgba(209, 226, 60, 0.514);
+}
+.crearCuenta .formNuevo {
+  margin: 25px;
+  border: 3px solid rgb(210, 226, 60);
+}
+
+.crearCuenta .formNuevo div {
+  margin: 25px;
+}
+
+.crearCuenta .formNuevo div button {
+  padding: 10px;
+  background-color: rgba(209, 226, 60, 0.514);
+  font-style: italic;
+}
+
+.ingresoCuenta h2 {
+  margin: 15px;
+  border: 4px solid rgb(210, 226, 60);
+  background-color: rgba(209, 226, 60, 0.514);
+}
+
+.ingresoCuenta .formCuenta {
+  margin: 25px;
+  border: 3px solid rgb(210, 226, 60);
+}
+
+.ingresoCuenta .formCuenta div {
+  margin: 25px;
+}
+
+.ingresoCuenta .formCuenta div button {
+  padding: 10px;
+  background-color: rgba(209, 226, 60, 0.514);
+  font-style: italic;
+}
+
+/*----------------FOOTER------------*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(209, 226, 60, 0.514);
+}
+
+footer .redesFotter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 3s ease-in-out;
+}
+
+footer .redesFotter a img {
+  height: 100px;
+  padding: 5px;
+}
+
+footer .redesFotter a img:hover {
+  transform: scale(1.5);
+}
+
+footer .pieUbicacion iframe {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*----------------MEDIA QUERYS------------*/
+
+@media screen and (max-width: 1250px) {
+  header {
+    flex-direction: column;
+  }
+  header a {
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+  header nav ul li {
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .calzadoIndustria .videosIndustria {
+    flex-direction: column;
+  }
+  .calzadoIndustria .videosIndustria iframe {
+    padding: 10px;
+  }
+  .contenedorGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .itemGrid {
+    justify-content: center;
+    align-items: center;
+  }
+  .infoServicio p {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .contenedorGrid {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .itemGrid {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .encabezadoServicio {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .tituloServicio {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
