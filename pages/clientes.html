@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
     <title>La Scarperia Calzados</title>
   </head>
   <body>
@@ -44,6 +44,24 @@
     <main>
       <section class="ingresoClientes">
         <div class="crearCuenta">
+          <div class="ingresoCuenta">
+            <h1>¿Estas Registrado?</h1>
+            <h3>Si ya tenés una cuenta, inicia sesión con tus datos</h3>
+            <form class="formCuenta" action="">
+              <div class="itemForm">
+                <label for="Usuario">Ingrese su Usuario:</label>
+                <input type="text" />
+              </div>
+              <div class="itemForm">
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" />
+              </div>
+              <div class="itemBoton">
+                <button type="submit">Ingresar</button>
+                <button type="reset">Limpiar Datos</button>
+              </div>
+            </form>
+          </div>
           <h2>
             Si es un nuevo Usuario por favor complete los siguientes datos para
             crear su cuenta.
@@ -53,15 +71,15 @@
             realizar pedidos y controlar el estado de los mismos
           </h3>
           <form class="formNuevo" action="">
-            <div>
+            <div class="itemForm">
               <label for="Usuario">Ingrese su Nombre de Usuario:</label>
               <input type="text" />
             </div>
-            <div>
+            <div class="itemForm">
               <label for="Contraseña"> Ingrese su Contraseña:</label>
               <input type="password" />
             </div>
-            <div>
+            <div class="itemBoton">
               <button type="submit">Crear Cuenta</button>
               <button type="reset">Borrar Datos</button>
             </div>

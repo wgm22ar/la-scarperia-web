@@ -89,26 +89,6 @@ header nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.349);
   border: 4px solid black;
 }
-.hero .quienesSomos .historia .nosotros {
-  font-size: 3rem;
-  font-style: bold italic;
-  border: 3px solid white;
-  background-color: rgba(255, 255, 255, 0.349);
-}
-.hero .quienesSomos .historia h3 {
-  font-style: bold italic;
-  border: 3px solid white;
-  background-color: rgba(255, 255, 255, 0.349);
-}
-.hero .quienesSomos .historia p {
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  color: black;
-  font-size: 1.2rem;
-  border: 3px solid white;
-  background-color: rgba(255, 255, 255, 0.349);
-}
-
 .hero .quienesSomos .historia {
   display: flex;
   justify-content: center;
@@ -120,6 +100,12 @@ header nav ul li a:hover {
   font-size: 2.5rem;
   margin: 5px;
 }
+.hero .quienesSomos .historia .nosotros {
+  font-size: 3rem;
+  font-style: bold italic;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+}
 .hero .quienesSomos .historia h3 {
   display: flex;
   justify-content: center;
@@ -128,6 +114,17 @@ header nav ul li a:hover {
   font-size: 2rem;
   color: black;
   margin: 5px;
+  font-style: bold italic;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
+}
+.hero .quienesSomos .historia p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: black;
+  font-size: 1.2rem;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.349);
 }
 .hero .quienesSomos .vision h3 {
   display: flex;
@@ -407,6 +404,13 @@ header nav ul li a:hover {
   text-align: center;
   background-color: rgba(209, 226, 60, 0.514);
 }
+
+.crearCuenta h1 {
+  margin: 15px;
+  border: 4px solid rgb(210, 226, 60);
+  background-color: rgba(209, 226, 60, 0.514);
+}
+
 .crearCuenta h2 {
   margin: 15px;
   border: 4px solid rgb(210, 226, 60);

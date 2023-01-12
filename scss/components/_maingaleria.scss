@@ -1,0 +1,23 @@
+/*------------------- MAIN GALERIA----------------------*/
+.marcas {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(209, 226, 60, 0.514);
+  .infoMarcas {
+    margin: 10px;
+  }
+  .subInfo {
+    margin: 20px;
+    .enlace {
+      margin-top: 20px;
+      a {
+        background-color: rgb(209, 226, 60);
+        border: 3px solid rgb(209, 226, 50);
+        padding: 5px;
+      }
+    }
+  }
+}

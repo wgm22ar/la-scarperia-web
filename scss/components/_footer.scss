@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(209, 226, 60, 0.514);
+  .redesFotter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 3s ease-in-out;
+    a {
+      img {
+        height: 100px;
+        padding: 5px;
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+  .pieUbicacion {
+    iframe {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}

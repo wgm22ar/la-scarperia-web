@@ -1,0 +1,186 @@
+//*--------MAIN INDEX-----*//
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 200;
+  font-style: italic;
+  width: 100%;
+  height: 80%;
+  .quienesSomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/servicios.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.349);
+    border: 4px solid black;
+    .historia {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      color: black;
+      font-size: 2.5rem;
+      margin: 5px;
+      .nosotros {
+        font-size: 3rem;
+        font-style: bold italic;
+        border: 3px solid white;
+        background-color: rgba(255, 255, 255, 0.349);
+      }
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 2rem;
+        color: black;
+        margin: 5px;
+        font-style: bold italic;
+        border: 3px solid white;
+        background-color: rgba(255, 255, 255, 0.349);
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+        color: black;
+        font-size: 1.2rem;
+        border: 3px solid white;
+        background-color: rgba(255, 255, 255, 0.349);
+      }
+    }
+    .vision {
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 2.5rem;
+        color: black;
+        margin: 5px;
+      }
+      p {
+        font-size: 1.2rem;
+        border: 3px solid white;
+        background-color: rgba(255, 255, 255, 0.349);
+        margin-bottom: 10px;
+      }
+    }
+    .mision {
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 2.5rem;
+        color: black;
+        margin: 5px;
+      }
+      p {
+        font-size: 1.2rem;
+        border: 3px solid white;
+        background-color: rgba(255, 255, 255, 0.349);
+      }
+    }
+  }
+}
+.nuestrosServicios {
+  .servicios {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50vh;
+    border: 4px solid black;
+    background-image: url("../img/servicios1.jpg");
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 3s ease-out;
+    a {
+      text-decoration: none;
+      color: black;
+      border: 3px solid white;
+      background-color: rgba(255, 255, 255, 0.349);
+      font-family: "Roboto", sans-serif;
+      font-size: 2.5rem;
+      font-style: italic;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+.productos {
+  .galeria {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50vh;
+    border: 4px solid black;
+    text-align: center;
+    background-image: url(../img/galeria2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 3s ease-out;
+    a {
+      text-decoration: none;
+      color: black;
+      border: 3px solid white;
+      background-color: rgba(255, 255, 255, 0.349);
+      font-family: "Roboto", sans-serif;
+      font-size: 2.5rem;
+      font-style: italic;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+.calzadoIndustria {
+  border: 4px solid black;
+  background-color: rgba(209, 226, 60, 0.514);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+  .tituloIndustria {
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 2.5rem;
+      font-style: italic;
+      text-align: center;
+      margin: 15px;
+    }
+    .videosIndustria {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
