@@ -5,7 +5,7 @@
   text-align: center;
   margin: 10px;
   padding: 10px;
-  background-color: rgba(209, 226, 60, 0.514);
+  background-color: map-get($colores, bg-color);
   .infoMarcas {
     margin: 10px;
   }
@@ -14,8 +14,8 @@
     .enlace {
       margin-top: 20px;
       a {
-        background-color: rgb(209, 226, 60);
-        border: 3px solid rgb(209, 226, 50);
+        background-color: map-get($colores, border-color);
+        border: 3px solid map-get($colores, border-color);
         padding: 5px;
       }
     }

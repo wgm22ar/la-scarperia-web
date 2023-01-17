@@ -1,8 +1,5 @@
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+.encabezado {
+  @include flexi(flex, space-around, center, row);
   background-color: rgba(255, 255, 255, 0.295);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -11,20 +8,18 @@ header {
   font-weight: bold;
   a {
     img {
-      align-items: start;
-      display: flex;
       height: 100%;
       width: 180%;
+      @include flexi(flex, none, start, none);
     }
   }
   nav {
     padding: 0px;
     ul {
       list-style: none;
-      display: flex;
-      flex-direction: row;
       height: 50px;
       width: 100%;
+      @include flexi(flex, none, none, row);
       li {
         font-family: "Roboto", sans-serif;
         font-weight: 1.5rem;
@@ -36,14 +31,14 @@ header {
           transform: translateY(-15px);
         }
         a {
-          color: black;
+          color: map-get($colores, word-color);
           text-decoration: none;
           border: 3px solid black;
           border-radius: 50%;
           padding: 10px;
-          background-color: rgba(209, 226, 60, 0.514);
+          background-color: map-get($colores, bg-color);
           &:hover {
-            background-color: rgba(126, 68, 180, 0.795);
+            background-color: map-get($colores, bg-hover);
           }
         }
       }

@@ -1,48 +1,53 @@
 /*------------------- MAIN CLIENTES----------------------*/
+
 .ingresoClientes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flexi(flex, center, center, column);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
-  background-color: rgba(209, 226, 60, 0.514);
+  background-color: map-get($colores, bg-color);
   .crearCuenta {
     .ingresoCuenta {
       h1 {
         margin: 15px;
-        border: 4px solid rgb(210, 226, 60);
-        background-color: rgba(209, 226, 60, 0.514);
+        border: 4px solid map-get($colores, border-color);
+        background-color: map-get($colores, bg-color);
       }
-
       .formCuenta {
         .itemForm {
-          margin: 25px;
+          margin: 10px;
+          padding: 10px;
+          font-size: 1.2rem;
         }
         .itemBoton {
           button {
             padding: 10px;
-            background-color: rgba(209, 226, 60, 0.514);
+            background-color: map-get($colores, bg-color);
             font-style: italic;
+            margin-top: 25px;
+            margin-bottom: 25px;
           }
         }
       }
     }
     h2 {
       margin: 15px;
-      border: 4px solid rgb(210, 226, 60);
-      background-color: rgba(209, 226, 60, 0.514);
+      border: 4px solid map-get($colores, border-color);
+      background-color: map-get($colores, bg-color);
     }
     .formNuevo {
       .itemForm {
-        margin: 25px;
+        margin: 10px;
+        padding: 10px;
+        font-size: 1.2rem;
       }
       .itemBoton {
         button {
           padding: 10px;
-          background-color: rgba(209, 226, 60, 0.514);
+          background-color: map-get($colores, bg-color);
           font-style: italic;
+          margin-top: 25px;
+          margin-bottom: 25px;
         }
       }
     }

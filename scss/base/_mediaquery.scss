@@ -1,0 +1,66 @@
+/*----------------MEDIA QUERYS------------*/
+
+@media screen and (max-width: 1250px) {
+  header .encabezado {
+    flex-direction: column;
+  }
+  header .encabezado a {
+    justify-content: center;
+    align-items: center;
+  }
+  header .encabezado nav ul {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+  header .encabezado nav ul li {
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .calzadoIndustria .videosIndustria {
+    flex-direction: column;
+  }
+  .calzadoIndustria .videosIndustria iframe {
+    padding: 10px;
+  }
+  .contenedorGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .itemGrid {
+    justify-content: center;
+    align-items: center;
+  }
+  .infoServicio p {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .contenedorGrid {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .itemGrid {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .encabezadoServicio {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .tituloServicio {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

@@ -1,14 +1,11 @@
 /*------------------- MAIN REDES----------------------*/
 .redes {
-  background-color: rgba(209, 226, 60, 0.514);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  background-color: map-get($colores, bg-color);
+  @include flexi(flex, space-between, center, column);
   .subtituloRedes {
     margin: 15px;
-    border: 4px solid rgb(210, 226, 60);
-    background-color: rgba(209, 226, 60, 0.514);
+    border: 4px solid map-get($colores, border-color);
+    background-color: map-get($colores, bg-color);
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-style: italic;
@@ -35,8 +32,8 @@
   .panelUbicacion {
     .subtituloRedes {
       margin: 15px;
-      border: 4px solid rgb(210, 226, 60);
-      background-color: rgba(209, 226, 60, 0.514);
+      border: 4px solid map-get($colores, border-color);
+      background-color: map-get($colores, bg-color);
       text-align: center;
       font-family: "Roboto", sans-serif;
       font-style: italic;
@@ -48,15 +45,10 @@
       animation-iteration-count: initial;
     }
     .seccionUbicacion {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
+      @include flexi(flex, flex-start, flex-start, column);
       div {
         iframe {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flexi(flex, center, center, none);
           margin-top: 10px;
         }
       }

@@ -4,7 +4,11 @@
   padding: 0;
   box-sizing: border-box; }
 
-header {
+footer .redesFotter a img {
+  height: 100px;
+  padding: 5px; }
+
+.encabezado {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -14,36 +18,40 @@ header {
   font-size: 1.3rem;
   font-style: italic;
   font-weight: bold; }
-  header a img {
-    align-items: start;
-    display: flex;
+  .encabezado a img {
     height: 100%;
-    width: 180%; }
-  header nav {
+    width: 180%;
+    display: flex;
+    justify-content: none;
+    align-items: start;
+    flex-direction: none; }
+  .encabezado nav {
     padding: 0px; }
-    header nav ul {
+    .encabezado nav ul {
       list-style: none;
-      display: flex;
-      flex-direction: row;
       height: 50px;
-      width: 100%; }
-      header nav ul li {
+      width: 100%;
+      display: flex;
+      justify-content: none;
+      align-items: none;
+      flex-direction: row; }
+      .encabezado nav ul li {
         font-family: "Roboto", sans-serif;
         font-weight: 1.5rem;
         font-style: bold;
         text-align: center;
         padding: 15px;
         transition: 3s ease; }
-        header nav ul li:hover {
+        .encabezado nav ul li:hover {
           transform: translateY(-15px); }
-        header nav ul li a {
+        .encabezado nav ul li a {
           color: black;
           text-decoration: none;
           border: 3px solid black;
           border-radius: 50%;
           padding: 10px;
           background-color: rgba(209, 226, 60, 0.514); }
-          header nav ul li a:hover {
+          .encabezado nav ul li a:hover {
             background-color: rgba(126, 68, 180, 0.795); }
 
 .hero {
@@ -89,6 +97,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         font-family: "Roboto", sans-serif;
         font-size: 2rem;
         color: black;
@@ -107,6 +116,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       font-family: "Roboto", sans-serif;
       font-size: 2.5rem;
       color: black;
@@ -120,6 +130,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       font-family: "Roboto", sans-serif;
       font-size: 2.5rem;
       color: black;
@@ -132,15 +143,15 @@ header {
 .nuestrosServicios .servicios {
   display: flex;
   justify-content: center;
-  text-align: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
   height: 50vh;
   border: 4px solid black;
   background-image: url("../img/servicios1.jpg");
-  text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -159,8 +170,8 @@ header {
 .productos .galeria {
   display: flex;
   justify-content: center;
-  text-align: center;
   align-items: center;
+  flex-direction: column;
   margin-bottom: 10px;
   width: 100%;
   height: 50vh;
@@ -220,21 +231,29 @@ header {
     border: 4px solid #d2e23c;
     background-color: rgba(209, 226, 60, 0.514); }
   .ingresoClientes .crearCuenta .ingresoCuenta .formCuenta .itemForm {
-    margin: 25px; }
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem; }
   .ingresoClientes .crearCuenta .ingresoCuenta .formCuenta .itemBoton button {
     padding: 10px;
     background-color: rgba(209, 226, 60, 0.514);
-    font-style: italic; }
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 25px; }
   .ingresoClientes .crearCuenta h2 {
     margin: 15px;
     border: 4px solid #d2e23c;
     background-color: rgba(209, 226, 60, 0.514); }
   .ingresoClientes .crearCuenta .formNuevo .itemForm {
-    margin: 25px; }
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem; }
   .ingresoClientes .crearCuenta .formNuevo .itemBoton button {
     padding: 10px;
     background-color: rgba(209, 226, 60, 0.514);
-    font-style: italic; }
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 25px; }
 
 /*------------------- MAIN CONTACTO----------------------*/
 .formContacto {
@@ -254,8 +273,8 @@ header {
     .marcas .subInfo .enlace {
       margin-top: 20px; }
       .marcas .subInfo .enlace a {
-        background-color: #d1e23c;
-        border: 3px solid #d1e232;
+        background-color: #d2e23c;
+        border: 3px solid #d2e23c;
         padding: 5px; }
 
 /*------------------- MAIN REDES----------------------*/
@@ -305,6 +324,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: none;
       margin-top: 10px; }
 
 /*--------KEYFRAME TITULO REDES-------------*/
@@ -345,9 +365,9 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 13px 15px 12px 0px rgba(201, 204, 73, 0.75);
-    -webkit-box-shadow: 13px 15px 12px 0px rgba(201, 204, 73, 0.75);
-    -moz-box-shadow: 13px 15px 12px 0px rgba(201, 204, 73, 0.75);
+    box-shadow: 13px 15px 12px 0px rgba(209, 226, 60, 0.514);
+    -webkit-box-shadow: 13px 15px 12px 0px rgba(209, 226, 60, 0.514);
+    -moz-box-shadow: 13px 15px 12px 0px rgba(209, 226, 60, 0.514);
     border: 3px solid #d2e23c;
     background-color: rgba(209, 226, 60, 0.514); }
     .contenedorGrid .itemGrid:hover {
@@ -367,20 +387,67 @@ header {
 footer {
   display: flex;
   justify-content: space-evenly;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   background-color: rgba(209, 226, 60, 0.514); }
   footer .redesFotter {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: none;
     flex-wrap: wrap;
     transition: 3s ease-in-out; }
-    footer .redesFotter a img {
-      height: 100px;
-      padding: 5px; }
-      footer .redesFotter a img:hover {
-        transform: scale(1.5); }
+    footer .redesFotter a img:hover {
+      transform: scale(1.5); }
   footer .pieUbicacion iframe {
     margin-top: 15px;
     margin-bottom: 15px; }
+
+/*----------------MEDIA QUERYS------------*/
+@media screen and (max-width: 1250px) {
+  header .encabezado {
+    flex-direction: column; }
+  header .encabezado a {
+    justify-content: center;
+    align-items: center; }
+  header .encabezado nav ul {
+    flex-direction: column;
+    height: auto;
+    padding: 5px; }
+  header .encabezado nav ul li {
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px; } }
+
+@media screen and (max-width: 1060px) {
+  .calzadoIndustria .videosIndustria {
+    flex-direction: column; }
+  .calzadoIndustria .videosIndustria iframe {
+    padding: 10px; }
+  .contenedorGrid {
+    grid-template-columns: repeat(2, 1fr); }
+  .itemGrid {
+    justify-content: center;
+    align-items: center; }
+  .infoServicio p {
+    padding: 0px; } }
+
+@media screen and (max-width: 970px) {
+  footer {
+    flex-direction: column; } }
+
+@media screen and (max-width: 760px) {
+  .contenedorGrid {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center; }
+  .itemGrid {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+  .encabezadoServicio {
+    font-size: 1rem;
+    text-align: center; }
+  .tituloServicio {
+    font-size: 1.5rem;
+    text-align: center; } }

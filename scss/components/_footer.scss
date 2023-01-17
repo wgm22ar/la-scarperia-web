@@ -1,19 +1,13 @@
 footer {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
-  background-color: rgba(209, 226, 60, 0.514);
+  @include flexi(flex, space-evenly, center, row);
+  background-color: map-get($colores, bg-color);
   .redesFotter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexi(flex, center, center, none);
     flex-wrap: wrap;
     transition: 3s ease-in-out;
     a {
       img {
-        height: 100px;
-        padding: 5px;
+        @extend %stylefooter;
         &:hover {
           transform: scale(1.5);
         }

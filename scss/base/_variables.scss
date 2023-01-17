@@ -1,0 +1,22 @@
+//*------------ MAPAS -----------------*//
+$colores: (
+  word-color: black,
+  bg-color: rgba(209, 226, 60, 0.514),
+  border-color: rgb(210, 226, 60),
+  bg-hover: rgba(126, 68, 180, 0.795),
+  bg-index: rgba(255, 255, 255, 0.349),
+);
+
+//*----------- EXTENDS ---------------*//
+%stylefooter {
+  height: 100px;
+  padding: 5px;
+}
+
+//*---------- MIXIN ------------------*//
+@mixin flexi($tipo, $justify, $alineacion, $direccion) {
+  display: $tipo;
+  justify-content: $justify;
+  align-items: $alineacion;
+  flex-direction: $direccion;
+}
