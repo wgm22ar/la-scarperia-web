@@ -69,7 +69,7 @@ footer .redesFotter a img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../img/servicios.jpg);
+    background-image: url(../img/servicios.png);
     width: 100%;
     height: 100%;
     background-position: center;
@@ -151,7 +151,7 @@ footer .redesFotter a img {
   width: 100%;
   height: 50vh;
   border: 4px solid black;
-  background-image: url("../img/servicios1.jpg");
+  background-image: url("../img/servicios1a.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,7 +177,7 @@ footer .redesFotter a img {
   height: 50vh;
   border: 4px solid black;
   text-align: center;
-  background-image: url(../img/galeria2.jpg);
+  background-image: url(../img/galeria2a.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
