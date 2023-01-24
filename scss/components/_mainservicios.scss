@@ -2,6 +2,8 @@
 .encabezadoServicio {
   @include flexi(flex, center, center, column);
   font-size: 1.5rem;
+  background-color: map-get($colores, bg-color);
+  margin-top: 50px;
   .tituloServicio {
     font-style: bold italic;
     font-size: 3rem;

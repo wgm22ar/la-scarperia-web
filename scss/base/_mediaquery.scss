@@ -1,29 +1,16 @@
 /*----------------MEDIA QUERYS------------*/
 
-@media screen and (max-width: 1250px) {
-  header .encabezado {
-    flex-direction: column;
-  }
-  header .encabezado a {
-    justify-content: center;
-    align-items: center;
-  }
-  header .encabezado nav ul {
-    flex-direction: column;
-    height: auto;
-    padding: 5px;
-  }
-  header .encabezado nav ul li {
-    padding: 5px;
-    font-size: 1rem;
-    margin: 10px;
-  }
-}
 @media screen and (max-width: 1060px) {
   .calzadoIndustria .videosIndustria {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .calzadoIndustria .videosIndustria iframe {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     padding: 10px;
   }
   .contenedorGrid {
@@ -38,9 +25,29 @@
   }
 }
 
+@media screen and (max-width: 1030px) {
+  header .encabezado nav ul li {
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px;
+    background-color: transparent;
+  }
+}
+
 @media screen and (max-width: 970px) {
   footer {
-    flex-direction: column;
+    @include flexi(column, center, center, column);
+  }
+  header .encabezado {
+    @include flexi(column, center, center, column);
+  }
+  header .encabezado a {
+    @include flexi(column, center, center, column);
+  }
+  header .encabezado nav ul {
+    @include flexi(column, center, center, column);
+    height: auto;
+    padding: 5px;
   }
 }
 

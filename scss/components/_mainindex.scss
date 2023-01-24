@@ -47,6 +47,7 @@
         font-size: 1.2rem;
         border: 3px solid white;
         background-color: map-get($colores, bg-index);
+        text-align: center;
       }
     }
     .vision {
@@ -62,6 +63,7 @@
         border: 3px solid white;
         background-color: map-get($colores, bg-index);
         margin-bottom: 10px;
+        text-align: center;
       }
     }
     .mision {
@@ -76,6 +78,7 @@
         font-size: 1.2rem;
         border: 3px solid white;
         background-color: map-get($colores, bg-index);
+        text-align: center;
       }
     }
   }
@@ -136,10 +139,10 @@
   }
 }
 .calzadoIndustria {
+  @include flexi(flex, center, center, column);
   border: 4px solid black;
   background-color: map-get($colores, bg-color);
   margin-bottom: 15px;
-  @include flexi(flex, center, center, column);
   margin-bottom: 15px;
   .tituloIndustria {
     h2 {
@@ -149,11 +152,17 @@
       text-align: center;
       margin: 15px;
     }
-    .videosIndustria {
-      @include flexi(flex, space-around, center, row);
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
+  }
+  .videosIndustria {
+    @include flexi(flex, center, center, row);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    iframe {
+      /*@include flexi(flex, space-around, center, row);*/
+      width: 80%;
+      height: 350px;
+      margin: 5px;
     }
   }
 }
