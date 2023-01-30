@@ -356,11 +356,8 @@ footer .redesFotter a img {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   background-color: rgba(209, 226, 60, 0.514); }
   .redes .subtituloRedes {
-    height: 100%;
     align-items: center;
     margin: 15px;
     border: 4px solid #d2e23c;
@@ -385,10 +382,12 @@ footer .redesFotter a img {
       margin: 10px; }
       .redes .enlacesRedes .linkRedes a img:hover {
         transform: scale(1.2); }
-  .redes .subEncabezado {
-    height: 100%; }
-    .redes .subEncabezado .subtituloRedes {
-      height: 100%;
+  .redes .seccionUbicacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    .redes .seccionUbicacion .subEncabezado .subtituloRedes {
       align-items: center;
       margin-bottom: 15px;
       margin-top: 15px;
@@ -403,11 +402,6 @@ footer .redesFotter a img {
       animation-timing-function: ease-in-out;
       animation-direction: initial;
       animation-iteration-count: initial; }
-  .redes .seccionUbicacion {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column; }
     .redes .seccionUbicacion div iframe {
       display: flex;
       justify-content: center;
@@ -580,15 +574,13 @@ footer {
 
 @media screen and (max-width: 500px) {
   .redes .subtituloRedes {
-    animation-play-state: paused;
+    /*animation-play-state:paused;*/
     font-size: 1.5rem;
-    height: 95%;
-    width: 100%; }
-  .redes .subEncabezado .subtituloRedes {
-    animation-play-state: paused;
+    width: auto; }
+  .redes .seccionUbicacion .subEncabezado .subtituloRedes {
+    /*animation-play-state: paused;*/
     font-size: 1.5rem;
-    height: 95%;
-    width: 100%; }
+    width: auto; }
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;
     margin: 5px; }

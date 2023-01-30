@@ -1,11 +1,8 @@
 /*------------------- MAIN REDES----------------------*/
 .redes {
   @include flexi(flex, space-between, center, column);
-  height: 100%;
-  width: 100%;
   background-color: map-get($colores, bg-color);
   .subtituloRedes {
-    height: 100%;
     align-items: center;
     margin: 15px;
     border: 4px solid map-get($colores, border-color);
@@ -35,28 +32,26 @@
       }
     }
   }
-  .subEncabezado {
-    height: 100%;
-    .subtituloRedes {
-      height: 100%;
-      align-items: center;
-      margin-bottom: 15px;
-      margin-top: 15px;
-      border: 4px solid map-get($colores, border-color);
-      background-color: map-get($colores, bg-color);
-      text-align: center;
-      font-family: "Roboto", sans-serif;
-      font-style: italic;
-      font-size: 3rem;
-      animation-name: slidetitulo;
-      animation-duration: 5s;
-      animation-timing-function: ease-in-out;
-      animation-direction: initial;
-      animation-iteration-count: initial;
-    }
-  }
   .seccionUbicacion {
-    @include flexi(flex, flex-start, flex-start, column);
+    @include flexi(flex, space-between, center, column);
+    .subEncabezado {
+      .subtituloRedes {
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        border: 4px solid map-get($colores, border-color);
+        background-color: map-get($colores, bg-color);
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+        font-size: 3rem;
+        animation-name: slidetitulo;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-direction: initial;
+        animation-iteration-count: initial;
+      }
+    }
     div {
       iframe {
         @include flexi(flex, center, center, none);
