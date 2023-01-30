@@ -3,6 +3,9 @@
   background-color: map-get($colores, bg-color);
   @include flexi(flex, space-between, center, column);
   .subtituloRedes {
+    width: 100%;
+    height: 100%;
+    align-items: center;
     margin: 15px;
     border: 4px solid map-get($colores, border-color);
     background-color: map-get($colores, bg-color);
@@ -33,6 +36,9 @@
   }
   .panelUbicacion {
     .subtituloRedes {
+      width: 100%;
+      height: 100%;
+      align-items: center;
       margin: 15px;
       border: 4px solid map-get($colores, border-color);
       background-color: map-get($colores, bg-color);

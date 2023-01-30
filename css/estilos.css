@@ -323,6 +323,9 @@ footer .redesFotter a img {
   align-items: center;
   flex-direction: column; }
   .redes .subtituloRedes {
+    width: 100%;
+    height: 100%;
+    align-items: center;
     margin: 15px;
     border: 4px solid #d2e23c;
     background-color: rgba(209, 226, 60, 0.514);
@@ -347,6 +350,9 @@ footer .redesFotter a img {
       .redes .enlacesRedes .linkRedes a img:hover {
         transform: scale(1.2); }
   .redes .panelUbicacion .subtituloRedes {
+    width: 100%;
+    height: 100%;
+    align-items: center;
     margin: 15px;
     border: 4px solid #d2e23c;
     background-color: rgba(209, 226, 60, 0.514);
@@ -544,13 +550,9 @@ footer {
     align-items: center;
     flex-direction: column; } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 470px) {
   .redes .subtituloRedes {
-    animation-play-state: paused;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
+    animation-play-state: paused; }
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;
     margin: 5px; } }

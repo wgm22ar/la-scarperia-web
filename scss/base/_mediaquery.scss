@@ -91,10 +91,9 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 470px) {
   .redes .subtituloRedes {
     animation-play-state: paused;
-    @include flexi(flex, center, center, column);
   }
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;
