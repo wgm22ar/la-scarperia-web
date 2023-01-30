@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 765px) {
   .contenedorGrid {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
@@ -69,5 +69,30 @@
   .tituloServicio {
     font-size: 1.5rem;
     text-align: center;
+  }
+  .formContacto form div input {
+    width: 250px;
+  }
+  .crearCuenta .ingresoCuenta .formCuenta .itemForm {
+    @include flexi(flex, center, center, column);
+  }
+  .crearCuenta .formNuevo .itemForm {
+    @include flexi(flex, center, center, column);
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .marcas .subInfo .enlace {
+    @include flexi(flex, center, center, column);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .redes .subtituloRedes {
+    animation-play-state: paused;
+  }
+  .redes .enlacesRedes .linkRedes a img {
+    height: 100px;
+    margin: 5px;
   }
 }
