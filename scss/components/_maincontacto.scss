@@ -1,19 +1,52 @@
 /*------------------- MAIN CONTACTO----------------------*/
 
-.formContacto {
+.formularioContacto {
+  @include flexi(flex, center, center, column);
+  flex-wrap: wrap;
   background-color: map-get($colores, bg-color);
 }
-.formContacto .formularioContacto {
-  @include flexi(flex, center, center, row);
+.formularioContacto h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  border: 4px solid;
+  font-style: italic;
+  border-color: map-get($colores, border-color);
+  background-color: map-get($colores, bg-color);
+  padding: 10px;
+}
+.formularioContacto .formContacto {
+  @include flexi(flex, space-around, center, column);
   flex-wrap: wrap;
+  border: solid 4px;
+  border-color: map-get($colores, border-color);
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-style: bold;
+  font-family: "Roboto", sans-serif;
+  border: 4px solid;
+  border-color: map-get($colores, border-color);
 }
-.formContacto .formularioContacto form div input {
+.formularioContacto .formContacto img {
+  width: 50%;
+  padding: 10px;
+}
+.formularioContacto .formContacto .itemsForm {
+  @include flexi(flex, space-around, center, column);
+  height: 100%;
+}
+.formularioContacto .formContacto .itemsForm input {
+  width: 450px;
+}
+.formularioContacto .formContacto .itemsForm textarea {
+  width: 450px;
+  text-align: center;
+  font-style: italic;
+}
+.formularioContacto .formContacto .botonesForm {
+  @include flexi(flex, center, center, column);
+  height: 100%;
   width: 100%;
-}
-.formContacto .formularioContacto form .areaTexto label {
-  height: 100%;
-}
-.formContacto .formularioContacto form .botonesForm div {
-  @include flexi(flex, center, center, row);
-  height: 100%;
+  margin-top: 20px;
 }

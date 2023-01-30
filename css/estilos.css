@@ -270,28 +270,67 @@ footer .redesFotter a img {
     margin-bottom: 25px; }
 
 /*------------------- MAIN CONTACTO----------------------*/
-.formContacto {
+.formularioContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: rgba(209, 226, 60, 0.514); }
 
-.formContacto .formularioContacto {
+.formularioContacto h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  border: 4px solid;
+  font-style: italic;
+  border-color: #d2e23c;
+  background-color: rgba(209, 226, 60, 0.514);
+  padding: 10px; }
+
+.formularioContacto .formContacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: solid 4px;
+  border-color: #d2e23c;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-style: bold;
+  font-family: "Roboto", sans-serif;
+  border: 4px solid;
+  border-color: #d2e23c; }
+
+.formularioContacto .formContacto img {
+  width: 50%;
+  padding: 10px; }
+
+.formularioContacto .formContacto .itemsForm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100%; }
+
+.formularioContacto .formContacto .itemsForm input {
+  width: 450px; }
+
+.formularioContacto .formContacto .itemsForm textarea {
+  width: 450px;
+  text-align: center;
+  font-style: italic; }
+
+.formularioContacto .formContacto .botonesForm {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-.formContacto .formularioContacto form div input {
-  width: 100%; }
-
-.formContacto .formularioContacto form .areaTexto label {
-  height: 100%; }
-
-.formContacto .formularioContacto form .botonesForm div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 100%; }
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px; }
 
 /*------------------- MAIN GALERIA----------------------*/
 .marcas {
@@ -522,34 +561,24 @@ footer {
     text-align: center; }
   .tituloServicio {
     font-size: 1.5rem;
-    text-align: center; }
-  .formContacto form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap; }
-  .formContacto .formularioContacto form div input {
-    width: 100%; }
-  .crearCuenta .ingresoCuenta .formCuenta .itemForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-  .crearCuenta .formNuevo .itemForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; } }
+    text-align: center; } }
 
 @media screen and (max-width: 555px) {
   .marcas .subInfo .enlace {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .formularioContacto h1 {
+    font-size: 2rem;
+    width: 90%; }
+  .formularioContacto .formContacto {
+    width: 95%; }
+  .formularioContacto .formContacto .itemsForm input {
+    width: 100%;
+    height: 95%; } }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 500px) {
   .redes .subtituloRedes {
     animation-play-state: paused;
     font-size: 1.5rem; }
@@ -558,7 +587,10 @@ footer {
     font-size: 1.5rem; }
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;
-    margin: 5px; } }
+    margin: 5px; }
+  .formularioContacto .formContacto .itemsForm textarea {
+    width: 250px;
+    height: 250px; } }
 
 @media screen and (max-width: 440px) {
   .formContacto .formularioContacto form .botonesForm div button {

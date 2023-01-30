@@ -70,28 +70,26 @@
     font-size: 1.5rem;
     text-align: center;
   }
-  .formContacto form {
-    @include flexi(flex, center, center, column);
-    flex-wrap: wrap;
-  }
-  .formContacto .formularioContacto form div input {
-    width: 100%;
-  }
-  .crearCuenta .ingresoCuenta .formCuenta .itemForm {
-    @include flexi(flex, center, center, column);
-  }
-  .crearCuenta .formNuevo .itemForm {
-    @include flexi(flex, center, center, column);
-  }
 }
 
 @media screen and (max-width: 555px) {
   .marcas .subInfo .enlace {
     @include flexi(flex, center, center, column);
   }
+  .formularioContacto h1 {
+    font-size: 2rem;
+    width: 90%;
+  }
+  .formularioContacto .formContacto {
+    width: 95%;
+  }
+  .formularioContacto .formContacto .itemsForm input {
+    width: 100%;
+    height: 95%;
+  }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 500px) {
   .redes .subtituloRedes {
     animation-play-state: paused;
     font-size: 1.5rem;
@@ -103,6 +101,10 @@
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;
     margin: 5px;
+  }
+  .formularioContacto .formContacto .itemsForm textarea {
+    width: 250px;
+    height: 250px;
   }
 }
 
