@@ -3,18 +3,17 @@
 .formContacto {
   background-color: map-get($colores, bg-color);
 }
-.formContacto form {
+.formContacto .formularioContacto {
   @include flexi(flex, center, center, row);
   flex-wrap: wrap;
 }
-.formContacto form div input {
+.formContacto .formularioContacto form div input {
   width: 100%;
 }
-.formContacto form .areaTexto label {
-  @include flexi(flex, space-around, center, row);
-  width: 100%;
+.formContacto .formularioContacto form .areaTexto label {
+  height: 100%;
 }
-.formContacto form .botonesForm div button {
-  @include flexi(flex, space-around, center, row);
-  width: 100%;
+.formContacto .formularioContacto form .botonesForm div {
+  @include flexi(flex, center, center, row);
+  height: 100%;
 }

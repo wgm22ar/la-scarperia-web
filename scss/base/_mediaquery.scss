@@ -74,8 +74,8 @@
     @include flexi(flex, center, center, column);
     flex-wrap: wrap;
   }
-  .formContacto form div input {
-    width: 250px;
+  .formContacto .formularioContacto form div input {
+    width: 100%;
   }
   .crearCuenta .ingresoCuenta .formCuenta .itemForm {
     @include flexi(flex, center, center, column);
@@ -95,11 +95,23 @@
   .redes .subtituloRedes {
     animation-play-state: paused;
   }
-  .redes .panelUbicacion .encabezado .subtituloRedes {
+  .redes .encabezado .subtituloRedes {
     animation-play-state: paused;
   }
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;
     margin: 5px;
+  }
+}
+
+@media screen and(max-width:440px) {
+  .formContacto .formularioContacto form .botonesForm div button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .formContacto .formularioContacto form .areaTexto textarea {
+    width: 100%;
   }
 }
