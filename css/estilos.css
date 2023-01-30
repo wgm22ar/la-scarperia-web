@@ -551,9 +551,11 @@ footer {
 
 @media screen and (max-width: 470px) {
   .redes .subtituloRedes {
-    animation-play-state: paused; }
-  .redes .encabezado .subtituloRedes {
-    animation-play-state: paused; }
+    animation-play-state: paused;
+    font-size: 1.5rem; }
+  .redes .subEncabezado .subtituloRedes {
+    animation-play-state: paused;
+    font-size: 1.5rem; }
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;
     margin: 5px; } }
