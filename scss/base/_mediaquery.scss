@@ -93,10 +93,14 @@
   .redes .subtituloRedes {
     animation-play-state: paused;
     font-size: 1.5rem;
+    height: 95%;
+    width: 100%;
   }
   .redes .subEncabezado .subtituloRedes {
     animation-play-state: paused;
     font-size: 1.5rem;
+    height: 95%;
+    width: 100%;
   }
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;
@@ -105,17 +109,5 @@
   .formularioContacto .formContacto .itemsForm textarea {
     width: 250px;
     height: 250px;
-  }
-}
-
-@media screen and(max-width:440px) {
-  .formContacto .formularioContacto form .botonesForm div button {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .formContacto .formularioContacto form .areaTexto textarea {
-    width: 100%;
   }
 }
