@@ -70,6 +70,10 @@
     font-size: 1.5rem;
     text-align: center;
   }
+  .formContacto form {
+    @include flexi(flex, center, center, column);
+    flex-wrap: wrap;
+  }
   .formContacto form div input {
     width: 250px;
   }
@@ -90,6 +94,7 @@
 @media screen and (max-width: 450px) {
   .redes .subtituloRedes {
     animation-play-state: paused;
+    @include flexi(flex, center, center, column);
   }
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;

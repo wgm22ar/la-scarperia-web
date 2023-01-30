@@ -2,10 +2,9 @@
 
 .formContacto {
   background-color: map-get($colores, bg-color);
-  @include flexi(flex, space-around, center, row);
 }
-.formContacto form div {
-  @include flexi(flex, space-around, center, row);
+.formContacto form {
+  @include flexi(flex, center, center, row);
   flex-wrap: wrap;
 }
 .formContacto form div input {

@@ -271,15 +271,11 @@ footer .redesFotter a img {
 
 /*------------------- MAIN CONTACTO----------------------*/
 .formContacto {
-  background-color: rgba(209, 226, 60, 0.514);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row; }
+  background-color: rgba(209, 226, 60, 0.514); }
 
-.formContacto form div {
+.formContacto form {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap; }
@@ -522,6 +518,12 @@ footer {
   .tituloServicio {
     font-size: 1.5rem;
     text-align: center; }
+  .formContacto form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
   .formContacto form div input {
     width: 250px; }
   .crearCuenta .ingresoCuenta .formCuenta .itemForm {
@@ -544,7 +546,11 @@ footer {
 
 @media screen and (max-width: 450px) {
   .redes .subtituloRedes {
-    animation-play-state: paused; }
+    animation-play-state: paused;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
   .redes .enlacesRedes .linkRedes a img {
     height: 100px;
     margin: 5px; } }
